@@ -3,8 +3,7 @@ package cn.itcast.session.entity;
 import java.util.Date;
 import java.util.UUID;
 
-// 订单类
-class Order {
+public class Order {
     private String id;
     private Date orderDate;
     private ShoppingCart cart;
@@ -15,7 +14,6 @@ class Order {
         this.cart = cart;
     }
 
-    // Getter 方法
     public String getId() {
         return id;
     }
@@ -30,10 +28,18 @@ class Order {
 
     @Override
     public String toString() {
-        return "Order{" +
-                "id='" + id + '\'' +
-                ", orderDate=" + orderDate +
-                ", totalPrice=" + cart.getTotalPrice() +
-                '}';
+        StringBuilder sb = new StringBuilder();
+        sb.append("订单编号: ").append(id).append("\n");
+        sb.append("订单日期: ").append(orderDate).append("\n");
+        sb.append("购买商品:\n");
+
+        for (CartItem item : cart.getItems()) {
+            sb.append(item.getProduct().getName()).append(" x ")
+                    .append(item.getQuantity()).append(" - 总价: ")
+                    .append(item.getTotalPrice()).append("\n");
+        }
+        sb.append("订单总价: ").append(cart.getTotalPrice()).append("\n");
+
+        return sb.toString();
     }
 }

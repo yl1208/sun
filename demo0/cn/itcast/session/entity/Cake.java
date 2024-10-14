@@ -1,27 +1,31 @@
 package cn.itcast.session.entity;
 
-
 public class Cake {
-    private static final long serialVersionUIO=1L;
+    private static final long serialVersionUID = 1L;
     private String id;
     private String name;
+
     public Cake() {
     }
-    public Cake(String id,String name){
-        this.id=id;
-        this.name=name;
+
+    public Cake(String id, String name) {
+        this.id = id;
+        this.name = name;
     }
-    public String getId(){
+
+    public String getId() {
         return id;
     }
-    public void setId(String id){
-        this.id=id;
+
+    public void setId(String id) {
+        this.id = id;
     }
-    public String getName(){
+
+    public String getName() {
         return name;
     }
-    public void setName(String name)
-    {
-        this.name=name;
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

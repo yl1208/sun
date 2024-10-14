@@ -1,9 +1,6 @@
 package cn.itcast.session.entity;
 
-
-
-// 购物车项类
-class CartItem {
+public class CartItem {
     private Product product;
     private int quantity;
 
@@ -20,7 +17,6 @@ class CartItem {
         return quantity;
     }
 
-    // 新增的 setQuantity 方法
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }

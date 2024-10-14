@@ -1,13 +1,11 @@
 package cn.itcast.session.entity;
 
-// 产品类，表示库存中的一个产品
 public class Product {
-    private String id; // 产品ID
-    private String name; // 产品名称
-    private double price; // 产品价格
-    private int stock; // 库存数量
+    private String id;
+    private String name;
+    private double price;
+    private int stock;
 
-    // 构造函数
     public Product(String id, String name, double price, int stock) {
         this.id = id;
         this.name = name;
@@ -48,14 +46,9 @@ public class Product {
         this.stock = stock;
     }
 
-    // 可选：重写toString()方法以便于打印产品信息
+    // 重写toString方法
     @Override
     public String toString() {
-        return "Product{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", price=" + price +
-                ", stock=" + stock +
-                '}';
+        return "Product{id='" + id + "', name='" + name + "', price=" + price + ", stock=" + stock + "}";
     }
 }

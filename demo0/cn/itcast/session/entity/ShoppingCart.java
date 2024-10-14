@@ -3,8 +3,7 @@ package cn.itcast.session.entity;
 import java.util.ArrayList;
 import java.util.List;
 
-// 购物车类
-class ShoppingCart {
+public class ShoppingCart {
     private List<CartItem> items;
 
     public ShoppingCart() {
