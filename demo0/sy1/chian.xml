@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 这是一个XML文档，包含了一些地区的信息 -->
+<document>
+    <regions>
+        <region name="中国">
+            <province name="山西">
+                <city name="大同"/>
+                <city name="太原"/>
+            </province>
+            <province name="河北">
+                <city name="石家庄"/>
+                <city name="张家口"/>
+            </province>
+        </region>
+    </regions>
+</document>
